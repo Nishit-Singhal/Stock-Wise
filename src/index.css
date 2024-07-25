@@ -24,6 +24,9 @@ body{
   position:absolute;
   right:100px;
   top:50px;
+  margin-right: 0px;
+  margin-left: auto;
+  margin-top: 50px;
   border-radius: 10px;
   border:solid black;
   border-width: 0.5px;
@@ -60,14 +63,14 @@ body{
   gap:10px;
   position: absolute;
   left: 30px;
-  top:600px;
+  top:900px;
 }
 .Market-Div{
   width:300px;
   height:200px;
   border: solid black; 
   border-width: 0.5px; 
-  margin-top:200px;
+  margin-top:-70px;
   margin-left: 50px;
   border-radius: 10px;
   color:black;
