@@ -1,10 +1,13 @@
 import './index.css'
-import Navbar from "./Navbar.jsx"
+import { Routes, Route } from 'react-router-dom'
+import Home from './Layouts/Home.jsx'
+import Profile from './Profile-Page.jsx'
 function App() {
   return (
-    <div>
-      <Navbar/>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/profile' element={<Profile />} />
+    </Routes>
   )
 }
 
