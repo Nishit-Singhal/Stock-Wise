@@ -21,7 +21,8 @@ body{
 }
 .Watchlist{
   width:400px;
-  margin-left:850px;
+  margin-right: 0px;
+  margin-left: auto;
   margin-top: 50px;
   border-radius: 10px;
   border:solid black;
