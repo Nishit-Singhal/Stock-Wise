@@ -1,20 +1,20 @@
 const StockList = ({ matches }) => {
     return (
-        <ul>
+        <div>
             {matches.map((match, index) => (
-                <li key={index}>
-                    <p>Symbol: {match['1. symbol']}</p>
-                    <p>Name: {match['2. name']}</p>
-                    <p>Type: {match['3. type']}</p>
-                    <p>Region: {match['4. region']}</p>
-                    <p>Market Open: {match['5. marketOpen']}</p>
-                    <p>Market Close: {match['6. marketClose']}</p>
-                    <p>Timezone: {match['7. timezone']}</p>
-                    <p>Currency: {match['8. currency']}</p>
-                    <p>Match Score: {match['9. matchScore']}</p>
-                </li>
+                <ul key={index} className="m-4 border-[2px] border-black rounded-md">
+                    <li>Symbol: {match['1. symbol']}</li>
+                    <li>Name: {match['2. name']}</li>
+                    <li>Type: {match['3. type']}</li>
+                    <li>Region: {match['4. region']}</li>
+                    <li>Market Open: {match['5. marketOpen']}</li>
+                    <li>Market Close: {match['6. marketClose']}</li>
+                    <li>Timezone: {match['7. timezone']}</li>
+                    <li>Currency: {match['8. currency']}</li>
+                    <li>Match Score: {match['9. matchScore']}</li>
+                </ul>
             ))}
-        </ul>
+        </div>
     );
 };
 

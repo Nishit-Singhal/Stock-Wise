@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="Navbar">
             <Link to={'/profile'}><img className="Profile-Image" src="src/assets/profile-white-icon.png"></img></Link>
             <div>
-                <input className="Searchbar" type="text" placeholder="Search your stock symbol here"></input>
+                <Link to={'/search'}><input className="Searchbar" type="text" placeholder="Search your stock symbol here"></input></Link>
             </div>
             <Sensex />
             <Market />
