@@ -2,39 +2,49 @@ import "./index.css"
 export default function Market(){
     return(
         <div>
-            <h1 className="Market-Heading">Market</h1>
+            <h1 align="center" className="Market-Heading">Market</h1>
             <div className="Market">
-            <div className="Market-Div">
-                <img className="Stock-logo" src="src/assets/Nasdaq-logo.png"></img>
-                <h1 className="Market-Div-Heading">Nasdaq 100 -</h1>
-                <div className="Market-Value"><p className="Market-Num">19,754.43</p><p className="Market-Currency">USD</p></div>
-                <p className="Percentage-Negative">-0.35%</p>
-                <img className="Graph" src="src/assets/nasdaq.png"></img>
-                <p align="center" className="Days">1 day</p>
+            <div className="Market-Divs">
+                <div className="Market-Row1">
+                <img className="Market-Logo" src="src/assets/Nasdaq-logo.png"></img>
+                <h2>Nasdaq 100</h2>
+                <br></br>
+                </div>
+                <div className="Market-Value">
+                    <h2 className="Market-Num">19,754.43</h2>
+                    <h2>USD</h2>
+                </div>
+                <p align="center" className="Percentage-Loss">-0.35%</p>
+                <img src="src/assets/nasdaq.png"></img>
+                <p align="center">1 Day</p>
             </div>
-            <div className="Market-Div">
-                <img className="Stock-logo" src="src/assets/FTSE-logo.jpg"></img>
-                <h1 className="Market-Div-Heading">FTSE 100</h1>
-                <div className="Market-Value"><p className="Market-Num">8,153.81</p><p className="Market-Currency">GBP</p></div>
-                <p className="Percentage-Negative">-0.17%</p>
-                <img height="65px" className="Graph" src="src/assets/FTSE.png"></img>
-                <p align="center" className="Days">1 day</p>
+            <div className="Market-Divs">
+                <div className="Market-Row1">
+                <img className="Market-Logo" src="src/assets/FTSE-logo.jpg"></img>
+                <h2>FTSE 100</h2>
+                <br></br>
+                </div>
+                <div className="Market-Value">
+                    <h2 className="Market-Num">81,332.72</h2>
+                    <h2>GBP</h2>
+                </div>
+                <p align="center" className="Percentage-Gain">+1.21%</p>
+                <img src="src/assets/FTSE.png"></img>
+                <p align="center">1 Day</p>
             </div>
-            <div className="Market-Div">
-                <img className="Stock-logo" src="src/assets/DAX-logo.png"></img>
-                <h1 className="Market-Div-Heading">DAX</h1>
-                <div className="Market-Value"><p className="Market-Num">18,433.20</p><p className="Market-Currency">EUR</p></div>
-                <p className="Percentage-Negative">-0.67%</p>
-                <img height="65px" className="Graph" src="src/assets/DAX.png"></img>
-                <p align="center" className="Days">1 day</p>
-            </div>
-            <div className="Market-Div">
-                <img className="Stock-logo" src="src/assets/Nasdaq-logo.png"></img>
-                <h1 className="Market-Div-Heading">Nasdaq 100 -</h1>
-                <div className="Market-Value"><p className="Market-Num">19,754.43</p><p className="Market-Currency">USD</p></div>
-                <p className="Percentage-Negative">-0.35%</p>
-                <img className="Graph" src="src/assets/nasdaq.png"></img>
-                <p align="center" className="Days">1 day</p>
+            <div className="Market-Divs">
+                <div className="Market-Row1">
+                <img className="Market-Logo" src="src/assets/bse-sensex-logo.png"></img>
+                <h2>BSE</h2>
+                <br></br>
+                </div>
+                <div className="Market-Value">
+                    <h2 className="Market-Num">81,332.72</h2>
+                    <h2>INR</h2>
+                </div>
+                <p align="center" className="Percentage-Gain">+1.62%</p>
+                <img src="src/assets/DAX.png"></img>
+                <p align="center">1 Day</p>
             </div>
             </div>
         </div>

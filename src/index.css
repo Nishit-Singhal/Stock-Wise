@@ -2,8 +2,34 @@ body{
   background-color:#ebeeef;
   font-family: Arial, Helvetica, sans-serif;
 }
-.Profile-Image{
+.Logo{
   width:40px;
+  height: 70px;
+}
+.Name{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+}
+.App-Name{
+  color:black;
+}
+.Navbar{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+.Home-Heading{
+  color:black;
+}
+.Watchlist-Heading{
+  color:black;
+}
+.Profile-Heading{
+  color:black;
+}
+.Profile-Image{
+  max-width:40px;
   border-radius: 50%;
   margin:20px 30px ;
   height:40px;
@@ -15,112 +41,14 @@ body{
   margin:25px 20px;
   font-size: 1.5rem;
 }
-.Navbar{
+.Searchbar_Profile_logo{
   display: flex;
-  gap:10px;
+  justify-content: center;
 }
-.Watchlist{
-  width:400px;
-  position:absolute;
-  right:100px;
-  top:50px;
-  margin-right: 0px;
-  margin-left: auto;
-  margin-top: 50px;
-  border-radius: 10px;
-  border:solid black;
-  border-width: 0.5px;
-  background-color:#6EACDA;
-}
-.Watchlist-Categories{
-  display: flex;
-  justify-content: space-between;
-}
-.Watchlist-Categories1{
-  display: flex;
-  justify-content: space-between;
-  gap:20px;
-}
-.Watchlist-Values{
-  display: flex;
-  justify-content: space-between;
-}
-.Watchlist-Values1{
-  display: flex;
-  justify-content: space-between;
-  gap:30px;
-}
-.Market-Heading{
-  color:black;
-  margin-top:700px;
-  font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  left:100px;
-}
-.Market{
-  display: flex;
-  gap:10px;
-  position: absolute;
-  left: 30px;
-  top:900px;
-}
-.Market-Div{
-  width:300px;
-  height:200px;
-  border: solid black; 
-  border-width: 0.5px; 
-  margin-top:-70px;
-  margin-left: 50px;
-  border-radius: 10px;
-  color:black;
-  font-size: 0.8rem;
-  background-color:#6EACDA;
-}
-.Stock-logo{
-  width: 30px;
-  border-radius:50% ;
-  margin-top:12px;
-  margin-left:10px;
-}
-.Market-Div-Heading{
-  margin-top:-30px;
-  margin-left:40px ;
-}
-.Market-Value{
-  display: flex;
-  gap:2px;
-  margin-top:-20px;
-  margin-left:10px;
-}
-.Market-Num{
-  margin-left:10px;
-  margin-top: 10px;
-  font-size: 1.5rem;
-}
-.Market-Currency{
-  margin-top: 20px;
-}
-.Percentage-Negative{
-  margin-top:-20px;
-  margin-left:20px;
-  color: red;
-  font-size:1.2rem;
-}
-.Graph{
-  margin-top: -20px;
-}
-.Days{
-  margin-top: 5px;
-  font-size: 1rem;
-  color: grey;
-}
+
 .Sensex{
   color:black;
-  position:absolute;
-  left:100px;
-  top:100px;
-
+  margin:auto;
 }
 .Sensex-Heading{
   font-size:3rem;
@@ -129,11 +57,44 @@ body{
 .Categories{
   color:black;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap:20px;
-  margin-top: -10px;
 }
 .Data{
   height:400px;
-  width: 800px;
+  max-width: 600px;
+  justify-content: center;
 }
+.Market-Heading{
+  font-size: 3rem;
+}
+.Market{
+  display:flex;
+  justify-content: center;
+  gap:20px;
+}
+.Market-Divs{
+  background-color: #6690f2;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 10px;
+}
+.Market-Logo{
+  width:40px;
+  height: 60px;
+  border-radius: 50%;
+}
+.Market-Row1{
+  display: flex;
+}
+.Percentage-Loss{
+  color:red;
+}
+.Percentage-Gain{
+  color:green;
+}
+.Market-Value{
+  display: flex;
+  gap:2px;
+}
+

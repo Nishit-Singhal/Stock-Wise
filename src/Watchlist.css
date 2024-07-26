@@ -1,0 +1,25 @@
+.Watchlist{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#6EACDA;
+    border-radius: 10px;
+  }
+  .Watchlist-Categories{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Watchlist-Categories1{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+  }
+  .Watchlist-Values{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Watchlist-Values1{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+  }

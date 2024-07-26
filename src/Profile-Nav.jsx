@@ -8,7 +8,6 @@ export default function ProfileNav(){
       <h1>John Doe</h1>
       <p>Web Developer</p>
       </div>
-      <Link to={"/"}><div className="Home-Button">Home</div></Link>
     </div>
   )
 }
