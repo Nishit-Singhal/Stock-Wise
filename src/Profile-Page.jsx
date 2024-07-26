@@ -7,7 +7,7 @@ import Navbar from "./Navbar.jsx"
 export default function Profile() {
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar/>
             <ProfileNav />
             <Portfolio />
             <StockPicks/>

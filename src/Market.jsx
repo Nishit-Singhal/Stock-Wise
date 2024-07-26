@@ -7,7 +7,7 @@ export default function Market(){
             <div className="Market-Divs">
                 <div className="Market-Row1">
                 <img className="Market-Logo" src="src/assets/Nasdaq-logo.png"></img>
-                <h2>Nasdaq 100</h2>
+                <h2 className="Market-Name">Nasdaq 100</h2>
                 <br></br>
                 </div>
                 <div className="Market-Value">
@@ -21,7 +21,7 @@ export default function Market(){
             <div className="Market-Divs">
                 <div className="Market-Row1">
                 <img className="Market-Logo" src="src/assets/FTSE-logo.jpg"></img>
-                <h2>FTSE 100</h2>
+                <h2 className="Market-Name">FTSE 100</h2>
                 <br></br>
                 </div>
                 <div className="Market-Value">
@@ -35,7 +35,7 @@ export default function Market(){
             <div className="Market-Divs">
                 <div className="Market-Row1">
                 <img className="Market-Logo" src="src/assets/bse-sensex-logo.png"></img>
-                <h2>BSE</h2>
+                <h2 className="Market-Name">BSE</h2>
                 <br></br>
                 </div>
                 <div className="Market-Value">

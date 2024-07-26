@@ -4,22 +4,47 @@
     margin-right: auto;
     background-color:#a3a5a8;
     border-radius: 10px;
+    padding: 10px;
+  }
+  .Watchlist-Heading1{
+    font-size:2rem;
   }
   .Watchlist-Categories{
     display: flex;
     justify-content: space-between;
+    font-size: 1.2rem;
+    margin-top:10px;
   }
   .Watchlist-Categories1{
     display: flex;
     justify-content: space-between;
-    gap:20px;
+    gap:30px;
+    font-size: 1.5rem;
   }
   .Watchlist-Values{
     display: flex;
     justify-content: space-between;
+    font-size: 1.2rem;
   }
   .Watchlist-Values1{
     display: flex;
     justify-content: space-between;
-    gap:30px;
+    gap:35px;
+    font-size: 1.2rem;
+  }
+  .Indices-Heading{
+    font-size: 1.5rem;
+    margin-top:10px ;
+  }
+  .Symbol-Heading{
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .Stocks-Heading1{
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .Futures-Heading{
+    font-size: 1.5rem;
+    margin-top: 10px;
   }

@@ -8,9 +8,9 @@ export default function Watchlist() {
         <div>
             <Navbar />
             <div className="Watchlist">
-                <h1 align="center">Watchlist</h1>
+                <h1 align="center" className="Watchlist-Heading1">Watchlist</h1>
                 <div className="Watchlist-Categories">
-                    <h2>Symbol</h2>
+                    <h1 className="Symbol-Heading">Symbol</h1>
                     <div className="Watchlist-Categories1">
                         <div><h2>Last</h2></div>
                         <div><h2>Chg</h2></div>
@@ -36,7 +36,7 @@ export default function Watchlist() {
                     </div>
                 </div>
                 <hr></hr>
-                <h2>Indices</h2>
+                <h2 className="Indices-Heading">Indices</h2>
                 <hr></hr>
                 <div className="Watchlist-Values">
                     <p>NDX</p>
@@ -74,7 +74,7 @@ export default function Watchlist() {
                     </div>
                 </div>
                 <hr></hr>
-                <h2>Stocks</h2>
+                <h2 className="Stocks-Heading1">Stocks</h2>
                 <hr></hr>
                 <div className="Watchlist-Values">
                     <p>AAPL</p>
@@ -103,7 +103,35 @@ export default function Watchlist() {
                     </div>
                 </div>
                 <hr></hr>
-
+                <h2 className="Futures-Heading">Futures</h2>
+                <hr></hr>
+                <div className="Watchlist-Values">
+                    <p>USOIL</p>
+                    <div className="Watchlist-Values1">
+                        <div><p>77.69</p></div>
+                        <div><p>0.28</p></div>
+                        <div><p>0.36%</p></div>
+                    </div>
+                </div>
+                <hr></hr>
+                <div className="Watchlist-Values">
+                    <p>GOLD</p>
+                    <div className="Watchlist-Values1">
+                        <div><p>2,412.43</p></div>
+                        <div><p>3.91</p></div>
+                        <div><p>0.16%</p></div>
+                    </div>
+                </div>
+                <hr></hr>
+                <div className="Watchlist-Values">
+                    <p>SILVER</p>
+                    <div className="Watchlist-Values1">
+                        <div><p>29.29</p></div>
+                        <div><p>0.077</p></div>
+                        <div><p>0.26%</p></div>
+                    </div>
+                </div>
+                <hr></hr>
             </div>
         </div>
     )

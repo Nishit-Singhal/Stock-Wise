@@ -22,6 +22,7 @@ body {
   background-color: #a3a5a8;
 }
 .App-Name{
+  font-size: 3rem;
   color:black;
 }
 .Navbar{
@@ -31,12 +32,15 @@ body {
   background-color: #a3a5a8;
 }
 .Home-Heading{
+  font-size:1.5rem;
   color:black;
 }
 .Watchlist-Heading{
+  font-size:1.5rem;
   color:black;
 }
 .Profile-Heading{
+  font-size:1.5rem;
   color:black;
 }
 .Profile-Image{
@@ -99,8 +103,11 @@ body {
 }
 .Market-Logo{
   width:40px;
-  height: 60px;
+  height: 40px;
   border-radius: 50%;
+}
+.Market-Name{
+  font-size:1.5rem;
 }
 .Market-Row1{
   display: flex;
