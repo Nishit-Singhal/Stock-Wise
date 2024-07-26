@@ -1,7 +1,16 @@
-body{
-  background-color:#ebeeef;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebeeef;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .Logo{
   width:40px;
   height: 70px;
@@ -31,14 +40,15 @@ body{
 .Profile-Image{
   max-width:40px;
   border-radius: 50%;
-  margin:20px 30px ;
-  height:40px;
+  margin: 20px 30px;
+  height: 40px;
 }
-.Searchbar{
-  width:500px;
+
+.Searchbar {
+  width: 500px;
   height: 30px;
   border-radius: 10px;
-  margin:25px 20px;
+  margin: 25px 20px;
   font-size: 1.5rem;
 }
 .Searchbar_Profile_logo{
@@ -50,12 +60,14 @@ body{
   color:black;
   margin:auto;
 }
-.Sensex-Heading{
-  font-size:3rem;
+
+.Sensex-Heading {
+  font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-.Categories{
-  color:black;
+
+.Categories {
+  color: black;
   display: flex;
   justify-content: center;
   gap:20px;
