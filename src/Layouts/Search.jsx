@@ -1,68 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
 import StockList from "../components/StockList";
+import AlphaVantage from "../assets/SampleData/AlphaVantage";
 
 const Search = () => {
     const [key, setKey] = useState("");
-    const [results, setResults] = useState({
-        "bestMatches": [
-            {
-                "1. symbol": "TSCO.LON",
-                "2. name": "Tesco PLC",
-                "3. type": "Equity",
-                "4. region": "United Kingdom",
-                "5. marketOpen": "08:00",
-                "6. marketClose": "16:30",
-                "7. timezone": "UTC+01",
-                "8. currency": "GBX",
-                "9. matchScore": "0.7273"
-            },
-            {
-                "1. symbol": "TSCDF",
-                "2. name": "Tesco plc",
-                "3. type": "Equity",
-                "4. region": "United States",
-                "5. marketOpen": "09:30",
-                "6. marketClose": "16:00",
-                "7. timezone": "UTC-04",
-                "8. currency": "USD",
-                "9. matchScore": "0.7143"
-            },
-            {
-                "1. symbol": "TSCDY",
-                "2. name": "Tesco plc",
-                "3. type": "Equity",
-                "4. region": "United States",
-                "5. marketOpen": "09:30",
-                "6. marketClose": "16:00",
-                "7. timezone": "UTC-04",
-                "8. currency": "USD",
-                "9. matchScore": "0.7143"
-            },
-            {
-                "1. symbol": "TCO2.FRK",
-                "2. name": "TESCO PLC ADR/1 LS-05",
-                "3. type": "Equity",
-                "4. region": "Frankfurt",
-                "5. marketOpen": "08:00",
-                "6. marketClose": "20:00",
-                "7. timezone": "UTC+02",
-                "8. currency": "EUR",
-                "9. matchScore": "0.5455"
-            },
-            {
-                "1. symbol": "TCO0.FRK",
-                "2. name": "TESCO PLC LS-0633333",
-                "3. type": "Equity",
-                "4. region": "Frankfurt",
-                "5. marketOpen": "08:00",
-                "6. marketClose": "20:00",
-                "7. timezone": "UTC+02",
-                "8. currency": "EUR",
-                "9. matchScore": "0.5455"
-            }
-        ]
-    });
+    const [results, setResults] = useState(AlphaVantage);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
@@ -92,14 +35,12 @@ const Search = () => {
                     value={key}
                     onChange={(e) => setKey(e.target.value)}
                     placeholder="Search by stock ticker..."
-                    className="border-[1px] border-black rounded-md p-1 grow"
+                    className="border-[1px] border-black rounded-md py-2 px-4 grow"
                 />
-                <button 
-                    onClick={handleSearch} 
+                <button
+                    onClick={handleSearch}
                     disabled={loading}
-                    onMouseEnter={(e) => e.target.style.backgroundColor = 'rgb(212, 234, 255, 3)'}
-                    onMouseLeave={(e) => e.target.style.backgroundColor = 'white'}
-                    className="bg-white rounded-md border-[1px] border-black px-3 py-2">
+                    className={`bg-white rounded-md border-[1px] border-black px-3 py-2 transition-colors duration-200 ${loading ? 'cursor-not-allowed' : 'hover:bg-[#e6f2ff]'}`}>
                     {loading ? 'Searching...' : 'Search'}
                 </button>
             </div>
@@ -107,10 +48,10 @@ const Search = () => {
             {error && <p>Error: {error.message}</p>}
             {results && results.bestMatches && (
                 <div>
-                    <h2>Results</h2>
                     <StockList matches={results.bestMatches} />
                 </div>
             )}
+
         </div>
     );
 };
