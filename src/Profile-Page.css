@@ -1,0 +1,107 @@
+body{
+    background-color:	#FFF5EE;
+  }
+  .profile-page-profile-photo{
+    width:60px;
+    margin-left:20px;
+  }
+  .Home-Button{
+    margin-top: 30px;
+    margin-left:400px;
+    font-size: 1.5rem;
+    color: black;
+  }
+  .profile{
+    display:flex;
+    gap:20px;
+    margin-top: 80px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#84A7A1;
+    border: solid black;
+    border-width:1px;
+    width:1000px;
+    border-radius:10px;
+  }
+  .Portfolio{
+    text-align:center;
+    display:flex;
+    gap:30px;
+    justify-content: center;
+  }
+  .Portfolio-Divs{
+    border:solid black;
+    border-radius:10px;
+    border-width:1px;
+    background-color:#84A7A1;
+    width:300px;
+    font-family:arial;
+  }
+  .Protfolio-Heading{
+    color:black;
+  }
+  .Stock-Name{
+    font-size:20px;
+  }
+  .Stock-Short{
+    font-size:15px;
+    margin-top:-10px;
+  }
+  .Stock-Value{
+    font-size:20px;
+    margin-top:20px;
+  }
+  .Stock-Growth{
+    font-size:15px;
+    margin-top:-10px;
+  }
+  .StockPicks{
+    text-align:center;
+    display:flex;
+    gap:30px;
+    justify-content: center;
+  }
+  .StockPicks-Divs{
+    border:solid black;
+    border-radius:10px;
+    border-width:1px;
+    background-color:#84A7A1;
+    width:300px;
+    font-family:arial;
+  }
+  .StockPicks-Heading{
+    color:black;
+  }
+  .MarketAnalysis-Name{
+    font-size:20px;
+  }
+  .MarketAnalysis-Short{
+    font-size:15px;
+    margin-top:-10px;
+  }
+  .MarketAnalysis-Value{
+    font-size:20px;
+    margin-top:20px;
+  }
+  .MarketAnalysis-Growth{
+    font-size:15px;
+    margin-top:-10px;
+  }
+  .MarketAnalysis{
+    text-align:center;
+    display:flex;
+    gap:30px;
+    justify-content: center;
+  }
+  .MarketAnalysis-Divs{
+    border:solid black;
+    border-radius:10px;
+    border-width:1px;
+    background-color:#84A7A1;
+    width:300px;
+    font-family:arial;
+  }
+  .MarketAnalysis-Heading{
+    color:black;
+  }
+  
