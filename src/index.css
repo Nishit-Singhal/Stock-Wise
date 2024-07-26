@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   gap:10px;
+  background-color: #a3a5a8;
 }
 .App-Name{
   color:black;
@@ -27,6 +28,7 @@ body {
   display: flex;
   justify-content: center;
   gap:20px;
+  background-color: #a3a5a8;
 }
 .Home-Heading{
   color:black;
