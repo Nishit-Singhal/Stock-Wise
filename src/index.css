@@ -86,7 +86,10 @@ body {
   gap:20px;
 }
 .Market-Divs{
-  background-color: #6690f2;
+  background-color:white;
+  border:solid black;
+  border-width: 1px;
+  box-shadow: 2px 2px;
   padding: 10px;
   max-width: 210px;
   border-radius: 10px;
