@@ -25,7 +25,7 @@ export default function Market(){
                 <br></br>
                 </div>
                 <div className="Market-Value">
-                    <h2 className="Market-Num">81,332.72</h2>
+                    <h2 className="Market-Num">8,285.71</h2>
                     <h2>GBP</h2>
                 </div>
                 <p align="center" className="Percentage-Gain">+1.21%</p>
