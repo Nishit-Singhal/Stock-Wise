@@ -102,7 +102,7 @@ const Search = () => {
             {loading && <p>Loading...</p>}
             {error && <p>Error: {error.message}</p>}
             {results && (
-                <div>
+                <div className="flex">
                     {results.map((match, index) => (
                         <div
                             className="hover:translate-y-[-10px] hover:bg-blue-200 transition-transform cursor-pointer"
