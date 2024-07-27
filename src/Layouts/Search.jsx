@@ -69,9 +69,18 @@ const Search = () => {
 
     return (
         <div>
-            <Link to={'/'}>
+            <div className="Name">
+                <Link to={'/'}><img className="Logo" src="src/assets/Stock-Wise-Logo.png"></img></Link>
+                <Link to={'/'}><h1 className="App-Name">Stock Wise</h1></Link>
+            </div>
+            <div className="Navbar">
+                <Link to={'/'}><h2 className="Home-Heading">Home</h2></Link>
+                <Link to={'/watchlist'}><h2 className="Watchlist-Heading">Watchlist</h2></Link>
+                <Link to={'/profile'}><h2 className="Profile-Heading">Profile</h2></Link>
+            </div>
+            {/* <Link to={'/'}>
                 <div className="text-3xl mt-5 mx-5 font-semibold">Home</div>
-            </Link>
+            </Link> */}
             <div className="flex gap-4 m-5">
                 <input
                     type="text"

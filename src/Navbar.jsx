@@ -18,7 +18,7 @@ export default function Navbar() {
                 <Link to={'/profile'}><img className="Profile-Image" src="src/assets/profile-white-icon.png"></img></Link>
                 <div>
                     <Link to={'/search'}>
-                        <input className="Searchbar" type="text" placeholder="Search" />
+                        <input className="Searchbar border-[1px] border-black" type="text" placeholder="Search" />
                     </Link>
                 </div>
             </div>
