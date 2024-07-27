@@ -87,6 +87,160 @@ const SampleData = [
       dividend: 0,
     },
   },
-]
+  {
+    ticker: "TSLA",
+    name: "Tesla, Inc.",
+    price: 700.45,
+    historicalPerformance: [
+      { date: "2023-01-01", value: 650.30 },
+      { date: "2023-02-01", value: 675.45 },
+      { date: "2023-03-01", value: 680.12 },
+      { date: "2023-04-01", value: 690.50 },
+      { date: "2023-05-01", value: 700.45 },
+    ],
+    forecastedTrend: {
+      nextMonth: "Increasing",
+      nextQuarter: "Increasing",
+      nextYear: "Stable",
+    },
+    metrics: {
+      pe: 120.5,
+      eps: 6.78,
+      dividend: 0,
+    },
+  },
+  {
+    ticker: "NFLX",
+    name: "Netflix, Inc.",
+    price: 450.32,
+    historicalPerformance: [
+      { date: "2023-01-01", value: 400.12 },
+      { date: "2023-02-01", value: 420.45 },
+      { date: "2023-03-01", value: 430.78 },
+      { date: "2023-04-01", value: 440.32 },
+      { date: "2023-05-01", value: 450.32 },
+    ],
+    forecastedTrend: {
+      nextMonth: "Increasing",
+      nextQuarter: "Stable",
+      nextYear: "Increasing",
+    },
+    metrics: {
+      pe: 50.3,
+      eps: 8.45,
+      dividend: 0,
+    },
+  },
+  {
+    ticker: "FB",
+    name: "Meta Platforms, Inc.",
+    price: 320.78,
+    historicalPerformance: [
+      { date: "2023-01-01", value: 300.45 },
+      { date: "2023-02-01", value: 310.78 },
+      { date: "2023-03-01", value: 315.12 },
+      { date: "2023-04-01", value: 318.32 },
+      { date: "2023-05-01", value: 320.78 },
+    ],
+    forecastedTrend: {
+      nextMonth: "Stable",
+      nextQuarter: "Increasing",
+      nextYear: "Increasing",
+    },
+    metrics: {
+      pe: 24.6,
+      eps: 10.23,
+      dividend: 0,
+    },
+  },
+  {
+    ticker: "NVDA",
+    name: "NVIDIA Corporation",
+    price: 600.12,
+    historicalPerformance: [
+      { date: "2023-01-01", value: 550.23 },
+      { date: "2023-02-01", value: 570.45 },
+      { date: "2023-03-01", value: 580.78 },
+      { date: "2023-04-01", value: 590.12 },
+      { date: "2023-05-01", value: 600.12 },
+    ],
+    forecastedTrend: {
+      nextMonth: "Increasing",
+      nextQuarter: "Increasing",
+      nextYear: "Stable",
+    },
+    metrics: {
+      pe: 90.5,
+      eps: 6.12,
+      dividend: 0.13,
+    },
+  },
+  {
+    ticker: "DIS",
+    name: "The Walt Disney Company",
+    price: 200.45,
+    historicalPerformance: [
+      { date: "2023-01-01", value: 180.32 },
+      { date: "2023-02-01", value: 185.45 },
+      { date: "2023-03-01", value: 190.12 },
+      { date: "2023-04-01", value: 195.32 },
+      { date: "2023-05-01", value: 200.45 },
+    ],
+    forecastedTrend: {
+      nextMonth: "Increasing",
+      nextQuarter: "Stable",
+      nextYear: "Increasing",
+    },
+    metrics: {
+      pe: 30.4,
+      eps: 7.12,
+      dividend: 1.45,
+    },
+  },
+  {
+    ticker: "V",
+    name: "Visa Inc.",
+    price: 220.78,
+    historicalPerformance: [
+      { date: "2023-01-01", value: 210.12 },
+      { date: "2023-02-01", value: 215.45 },
+      { date: "2023-03-01", value: 218.78 },
+      { date: "2023-04-01", value: 220.32 },
+      { date: "2023-05-01", value: 220.78 },
+    ],
+    forecastedTrend: {
+      nextMonth: "Stable",
+      nextQuarter: "Increasing",
+      nextYear: "Increasing",
+    },
+    metrics: {
+      pe: 35.6,
+      eps: 6.78,
+      dividend: 0.96,
+    },
+  },
+  {
+    ticker: "JPM",
+    name: "JPMorgan Chase & Co.",
+    price: 155.32,
+    historicalPerformance: [
+      { date: "2023-01-01", value: 140.12 },
+      { date: "2023-02-01", value: 145.45 },
+      { date: "2023-03-01", value: 150.78 },
+      { date: "2023-04-01", value: 153.32 },
+      { date: "2023-05-01", value: 155.32 },
+    ],
+    forecastedTrend: {
+      nextMonth: "Increasing",
+      nextQuarter: "Stable",
+      nextYear: "Increasing",
+    },
+    metrics: {
+      pe: 16.5,
+      eps: 9.32,
+      dividend: 3.20,
+    },
+  },
+];
 
-export default SampleData
+export default SampleData;

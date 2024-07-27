@@ -32,7 +32,7 @@ const Search = () => {
 
     // Toggle Color of a map element with view when clicked
     const toggleColor = (index) => {
-        setSelectedIndex(index === selectedIndex ? null : index);
+        setSelectedIndex(index);
     }
 
     // When we click on a search result, show the graph
@@ -105,7 +105,7 @@ const Search = () => {
                 <div>
                     {results.map((match, index) => (
                         <div
-                            className={`hover:translate-y-[-10px] transition-transform cursor-pointer ${index === selectedIndex ? 'bg-blue-200' : ''}`}
+                            className="hover:translate-y-[-10px] hover:bg-blue-200 transition-transform cursor-pointer"
                             key={index}
                             onClick={() => toggleView(index)}>
                             <StockList match={match} />
