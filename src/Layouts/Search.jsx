@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import StockList from "../components/StockList";
 import SampleData from "../assets/SampleData/SampleData.jsx";
@@ -12,7 +12,15 @@ const Search = () => {
     const [loading, setLoading] = useState(false);
     const [view, setView] = useState(false)
     const [selectedIndex, setSelectedIndex] = useState(null);
-    const API_KEY = "ER9PZOC93XAT2HX2";
+    const ref = useRef(null)
+    // const API_KEY = "ER9PZOC93XAT2HX2";      doesn't work
+
+    useEffect(() => {
+        // search for key (ticker) in the SampleData
+        const result = searchTicker(SampleData, key)
+        setResults(result)
+    }, [key])
+
 
     // Scroll to bottom of the screen
     const ScrollToBottom = () => {
@@ -24,7 +32,7 @@ const Search = () => {
 
     // Toggle Color of a map element with view when clicked
     const toggleColor = (index) => {
-        setSelectedIndex(index);
+        setSelectedIndex(index === selectedIndex ? null : index);
     }
 
     // When we click on a search result, show the graph
@@ -36,22 +44,28 @@ const Search = () => {
         }
     }
 
-    // If api is working fetch from here
-    const handleSearch = async () => {
-        setLoading(true);
-        setError(null);
-        setResults(null);
+    const searchTicker = (data, substring) => {
+        substring = substring.toUpperCase()
+        return data.filter(item => item.ticker.includes(substring))
+    }
 
-        try {
-            const response = await axios.get(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${key}&apikey=${API_KEY}`);
-            console.log(response)
-            setResults(response.data);
-        } catch (error) {
-            setError(error);
-        } finally {
-            setLoading(false);
-        }
-    };
+    // If API is working uncomment search button and handleSearch function. Don't use useEffect.
+    // It will create a lot of requests and burn our quotas.
+    // const handleSearch = async () => {
+    //     setLoading(true);
+    //     setError(null);
+    //     setResults(null);
+
+    //     try {
+    //         const response = await axios.get(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${key}&apikey=${API_KEY}`);
+    //         console.log(response)
+    //         setResults(response.data);
+    //     } catch (error) {
+    //         setError(error);
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // };
 
     return (
         <div>
@@ -66,12 +80,15 @@ const Search = () => {
                     placeholder="Search by stock ticker..."
                     className="border-[1px] border-black rounded-md py-2 px-4 grow"
                 />
-                <button
+
+                {/* If API is working uncomment search button and handleSearch function. Don't use useEffect.
+                It will create a lot of requests and burn our quotas. */}
+                {/* <button
                     onClick={handleSearch}
                     disabled={loading}
                     className={`bg-white rounded-md border-[1px] border-black px-3 py-2 transition-colors duration-200 ${loading ? 'cursor-not-allowed' : 'hover:bg-[#e6f2ff]'}`}>
                     {loading ? 'Searching...' : 'Search'}
-                </button>
+                </button> */}
             </div>
             {loading && <p>Loading...</p>}
             {error && <p>Error: {error.message}</p>}
@@ -89,6 +106,8 @@ const Search = () => {
             )}
             {/* Pass the data of the component currently selected in Detail component  */}
             {view && selectedIndex && (<Detail data={SampleData[selectedIndex]} />)}
+
+            {/*  Can also use section here for scroll-based animations.  */}
         </div>
     );
 };
