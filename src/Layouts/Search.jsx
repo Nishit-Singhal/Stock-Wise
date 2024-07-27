@@ -14,14 +14,6 @@ const Search = () => {
     const [selectedIndex, setSelectedIndex] = useState(null);
     const API_KEY = "ER9PZOC93XAT2HX2";
 
-    // Scroll to the bottom when view is true
-    useEffect(() => {
-        if (view) {
-            setTimeout(ScrollToBottom, 0)
-        }
-    }, [view])
-
-
     // Scroll to bottom of the screen
     const ScrollToBottom = () => {
         window.scrollTo({
@@ -32,13 +24,16 @@ const Search = () => {
 
     // Toggle Color of a map element with view when clicked
     const toggleColor = (index) => {
-        setSelectedIndex(index === selectedIndex ? null : index);
+        setSelectedIndex(index);
     }
 
     // When we click on a search result, show the graph
     const toggleView = (index) => {
         setView(prevView => !prevView);
         toggleColor(index);
+        if (!view) {
+            setTimeout(ScrollToBottom, 0)
+        }
     }
 
     // If api is working fetch from here
@@ -92,7 +87,8 @@ const Search = () => {
                     ))}
                 </div>
             )}
-            {view && <Detail />}
+            {/* Pass the data of the component currently selected in Detail component  */}
+            {view && selectedIndex && (<Detail data={SampleData[selectedIndex]} />)}
         </div>
     );
 };
