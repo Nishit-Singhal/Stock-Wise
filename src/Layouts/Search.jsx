@@ -2,13 +2,14 @@ import { useState } from "react";
 import axios from "axios";
 import StockList from "../components/StockList";
 import AlphaVantage from "../assets/SampleData/AlphaVantage";
+import Detail from '../components/Detail.jsx'
 
 const Search = () => {
     const [key, setKey] = useState("");
     const [results, setResults] = useState(AlphaVantage);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-
+    const [view, setView] = useState(false)
     const API_KEY = "ER9PZOC93XAT2HX2";
 
     const handleSearch = async () => {
@@ -48,10 +49,18 @@ const Search = () => {
             {error && <p>Error: {error.message}</p>}
             {results && results.bestMatches && (
                 <div>
-                    <StockList matches={results.bestMatches} />
+                    {results.bestMatches.map((match, index) => (
+                        <div 
+                            className="lg:flex lg:flex-row lg:justify-around"
+                            key={index}>
+                            {/* onClick={view ? setView(false) : setView(true)}> */}
+                        <StockList match={match}/>
+                        </div>
+                    ))}
+
                 </div>
             )}
-
+            {view ? <Detail /> : ''} 
         </div>
     );
 };
