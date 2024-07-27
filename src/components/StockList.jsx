@@ -1,6 +1,6 @@
 const StockList = (props) => {
     return (
-        <ul className="bg-white m-4 border-[1px] border-black rounded-md p-4 lg:w-48">
+        <ul className="bg-white m-5 border-[1px] border-black rounded-md p-4 lg:w-48">
             <li><h3 className="font-semibold">{props.match['1. symbol']}</h3></li>
             <li><p className="text-sm text-gray-600">{props.match['2. name']}</p></li>
             {/* <li>Type: {props.match['3. type']}</li> */}

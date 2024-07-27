@@ -3,6 +3,7 @@ import axios from "axios";
 import StockList from "../components/StockList";
 import AlphaVantage from "../assets/SampleData/AlphaVantage";
 import Detail from '../components/Detail.jsx'
+import { Link } from "react-router-dom";
 
 const Search = () => {
     const [key, setKey] = useState("");
@@ -11,6 +12,11 @@ const Search = () => {
     const [loading, setLoading] = useState(false);
     const [view, setView] = useState(false)
     const API_KEY = "ER9PZOC93XAT2HX2";
+
+
+    const toggleView = () => {
+        setView(view => !view)
+    }
 
     const handleSearch = async () => {
         setLoading(true);
@@ -30,6 +36,9 @@ const Search = () => {
 
     return (
         <div>
+            <Link to={'/'}>
+                <div className="text-3xl mt-5 mx-5 font-semibold">Home</div>
+            </Link>
             <div className="flex gap-4 m-5">
                 <input
                     type="text"
@@ -50,17 +59,17 @@ const Search = () => {
             {results && results.bestMatches && (
                 <div>
                     {results.bestMatches.map((match, index) => (
-                        <div 
+                        <div
                             className="lg:flex lg:flex-row lg:justify-around"
-                            key={index}>
-                            {/* onClick={view ? setView(false) : setView(true)}> */}
-                        <StockList match={match}/>
+                            key={index}
+                            onClick={toggleView}>
+                            <StockList match={match} />
                         </div>
                     ))}
 
                 </div>
             )}
-            {view ? <Detail /> : ''} 
+            {view && <Detail />}
         </div>
     );
 };
