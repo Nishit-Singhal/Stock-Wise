@@ -11,10 +11,10 @@ export default function Market(){
                 <br></br>
                 </div>
                 <div className="Market-Value">
-                    <h2 className="Market-Num">19,754.43</h2>
+                    <h2 className="Market-Num">17,357.88</h2>
                     <h2>USD</h2>
                 </div>
-                <p align="center" className="Percentage-Loss">-0.35%</p>
+                <p align="center" className="Percentage-Gain">+1.03%</p>
                 <img src="src/assets/nasdaq.png"></img>
                 <p align="center">1 Day</p>
             </div>
@@ -43,7 +43,7 @@ export default function Market(){
                     <h2>INR</h2>
                 </div>
                 <p align="center" className="Percentage-Gain">+1.62%</p>
-                <img src="src/assets/DAX.png"></img>
+                <img src="src/assets/bse.png"></img>
                 <p align="center">1 Day</p>
             </div>
             </div>
