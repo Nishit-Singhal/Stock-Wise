@@ -2,124 +2,123 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #ebeeef;
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebeeef;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.Logo{
-  width:40px;
-  height: 70px;
+.Logo {
+    width: 40px;
+    height: 70px;
 }
-.Name{
-  display: flex;
-  justify-content: center;
-  gap:10px;
-  background-color: #a3a5a8;
+.Name {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #a3a5a8;
 }
-.App-Name{
-  font-size: 3rem;
-  color:black;
+.App-Name {
+    font-size: 3rem;
+    color: black;
 }
-.Navbar{
-  display: flex;
-  justify-content: center;
-  gap:20px;
-  background-color: #a3a5a8;
+.Navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #a3a5a8;
 }
-.Home-Heading{
-  font-size:1.5rem;
-  color:black;
+.Home-Heading {
+    font-size: 1.5rem;
+    color: black;
 }
-.Watchlist-Heading{
-  font-size:1.5rem;
-  color:black;
+.Watchlist-Heading {
+    font-size: 1.5rem;
+    color: black;
 }
-.Profile-Heading{
-  font-size:1.5rem;
-  color:black;
+.Profile-Heading {
+    font-size: 1.5rem;
+    color: black;
 }
-.Profile-Image{
-  max-width:40px;
-  border-radius: 50%;
-  margin: 20px 30px;
-  height: 40px;
+.Profile-Image {
+    max-width: 40px;
+    border-radius: 50%;
+    margin: 20px 30px;
+    height: 40px;
 }
 
 .Searchbar {
-  width: 500px;
-  height: 30px;
-  border-radius: 10px;
-  margin: 25px 20px;
-  font-size: 1.5rem;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 25px 20px;
+    font-size: 1.5rem;
 }
-.Searchbar_Profile_logo{
-  display: flex;
-  justify-content: center;
+.Searchbar_Profile_logo {
+    display: flex;
+    justify-content: center;
 }
 
-.Sensex{
-  color:black;
-  margin:auto;
+.Sensex {
+    color: black;
+    margin: auto;
 }
 
 .Sensex-Heading {
-  font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Categories {
-  color: black;
-  display: flex;
-  justify-content: center;
-  gap:20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-.Data{
-  height:400px;
-  max-width: 600px;
-  justify-content: center;
+.Data {
+    height: 400px;
+    max-width: 600px;
+    justify-content: center;
 }
-.Market-Heading{
-  font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
+.Market-Heading {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.Market{
-  display:flex;
-  justify-content: center;
-  gap:20px;
+.Market {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-.Market-Divs{
-  background-color:white;
-  border:solid black;
-  border-width: 1px;
-  box-shadow: 2px 2px;
-  padding: 10px;
-  max-width: 210px;
-  border-radius: 10px;
+.Market-Divs {
+    background-color: white;
+    border: solid black;
+    border-width: 1px;
+    box-shadow: 2px 2px;
+    padding: 10px;
+    max-width: 210px;
+    border-radius: 10px;
 }
-.Market-Logo{
-  width:40px;
-  height: 40px;
-  border-radius: 50%;
+.Market-Logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
-.Market-Name{
-  font-size:1.5rem;
+.Market-Name {
+    font-size: 1.5rem;
 }
-.Market-Row1{
-  display: flex;
+.Market-Row1 {
+    display: flex;
 }
-.Percentage-Loss{
-  color:red;
+.Percentage-Loss {
+    color: red;
 }
-.Percentage-Gain{
-  color:green;
+.Percentage-Gain {
+    color: green;
 }
-.Market-Value{
-  display: flex;
-  gap:2px;
+.Market-Value {
+    display: flex;
+    gap: 2px;
 }
-
